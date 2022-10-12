@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import TMDB from "./TMDB";
 
+// console.log(TMDB)
+
 export default class Films extends Component {
   render() {
     let allFilms = TMDB.films.map((item) => item.title);
@@ -17,3 +19,8 @@ export default class Films extends Component {
     );
   }
 }
+
+
+// TMDB imported to Films + console.log confirms linked
+// Films imported to FilmRow
+// ! NEITHER TMDB OR FILM LINKED WITH FILMROW?????
