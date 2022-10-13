@@ -5,15 +5,26 @@ import FilmRow from './FilmRow'
 
 export default class Films extends Component {
 
-  render() {
+
+  state = {
+    filter: 'all'
+  }
+
+  render() {  
 
     var allFilms = this.props.films.map((film, index) => (
-    <FilmRow film={film} key={film.id}/>
-     ))
+      <FilmRow film={film} key={film.id}/>
+      ))
 
-    const handleFilterClick = (e) => {
-      console.log("Setting filter to ")
-  }
+    handleFilterClick(filter) {
+      console.log(`Setting filter to ${filter}`)
+      this.setState({
+        filter: filter
+      })
+      console.log(`Filter is now set to ${filter}`)
+    }
+
+    
 
      return (
       <div className="film-list">
