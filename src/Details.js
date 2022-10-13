@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import TMDB from "./TMDB";
+// import TMDB from "./TMDB";
 
 export default class Details extends Component {
   render() {

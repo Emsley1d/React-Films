@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Details from './Details'
 import Films from './Films'
+import FilmRow from './FilmRow'
 
 export default class App extends Component {
 
@@ -13,7 +14,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <><Films></Films><Details></Details></>
+      <><Films></Films><Details></Details><FilmRow></FilmRow></>
 
     )
     }
