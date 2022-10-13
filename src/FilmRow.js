@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import FilmPoster from './FilmPoster';
+import Fave from './Fave';
 
 
 
@@ -16,9 +17,11 @@ export default class FilmRow extends Component {
         <div className="film-summary">
           <h1>{this.props.film.title}</h1>
           <p>{date}</p>
+        
 
 
         </div>
+        <Fave></Fave>
       </div>
     )
   }
