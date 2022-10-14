@@ -18,7 +18,7 @@ export default class FilmRow extends Component {
           <h1>{this.props.film.title}</h1>
           <p>{date}</p>
         </div>
-        <Fave></Fave>
+        <Fave/> 
       </div>
     )
   }
