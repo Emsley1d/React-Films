@@ -6,16 +6,18 @@ import Fave from './Fave';
 
 
 export default class FilmRow extends Component {
+  
+  handleDetailsClick=(e) => {
+    // console.log("Fetching details for" {this.props.film})
+}
+  
+  
   render() {
-
-  //   handleDetailsClick=(e) => {
-  //     console.log("Fetching details for" {this.props.film.title})
-  // }
 
     const date = new Date(this.props.film.release_date).getFullYear()
 
     return (
-        <div className="film-row">
+        <div onClick={this.handleDetailsClick} className="film-row">
         <FilmPoster poster={this.props.film.poster_path}/>
 
         <div className="film-summary">
