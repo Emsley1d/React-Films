@@ -2,9 +2,17 @@ import React, { Component } from 'react'
 
 
 export default class Fave extends Component {
-  render() {
+
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+        
+    }
+  }
 
     handleClick=(e) => {
+        e.stopPropagation()
         console.log("handling Fave click!")
     }
 
@@ -17,4 +25,4 @@ export default class Fave extends Component {
     )
   }
 }
-}
+
