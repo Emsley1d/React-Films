@@ -14,6 +14,9 @@ export default class FilmRow extends Component {
   
   render() {
 
+    // STEP 14???
+    // In FilmRow's render function, where you call the Fave component, add a prop called onFaveToggle and pass it the onFaveToggle prop that FilmRow received.    
+
     const date = new Date(this.props.film.release_date).getFullYear()
 
     return (

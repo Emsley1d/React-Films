@@ -47,7 +47,13 @@ class App extends Component {
     //   console.log(`Removing {this.props.film.title} to faves`)
     // };
 
+        // PART 3 STEP 11?
+    // In the App component's render method, add a new prop to the FilmListing component called onFaveToggle. Its value should be a reference to the handleFaveToggle method you just finished writing.
+    // onFaveToggle handleFaveToggle
+
   render() {
+
+    this.setState({faves})
 
     return (
       <div className="App" >

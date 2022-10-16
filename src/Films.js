@@ -19,9 +19,20 @@ export default class Films extends Component {
   }
 
   render() {
-    const allFilms = this.props.films.map((film) => (
-      <FilmRow film={film} key={film.id} />
-    ));
+    const allFilms = this.props.films.map((film) => {
+      return (
+      <FilmRow
+      film={film}
+      key={film.id}
+      onFaveToggle={() => this.props.onFaveToggle(film)}
+      />
+    )
+    })
+    
+
+    // PART 3 STEP 11?
+    // In the App component's render method, add a new prop to the FilmListing component called onFaveToggle. Its value should be a reference to the handleFaveToggle method you just finished writing.
+    // onFaveToggle handleFaveToggle
 
     return (
       <div className="film-list">
